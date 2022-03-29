@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Supakorn</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="nav">
+            <div class="subnav first">
+                <button class="nav-button" onclick="jumpToSkills()">
+                    <p class="nav-text rotateLeft">Skills</p>
+                </button>
+                <button class="nav-button">
+                    <p class="nav-text rotateLeft">Portfolio</p>
+                </button>
+            </div>
+            <div class="subnav second">
+                <a href="https://github.com/GarField42" target="_blank" class="nav-icon">
+                    <img src="/Picture/github.png" width="50%" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/supakorn-rungket-483867209/" target="_blank" class="nav-icon">
+                    <img src="/Picture/linkedin-icon.jpg" width="50%" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <img src="Picture/Profile.jpg" class="img-round">
+            <p class="name">Supakorn Rungket</p>
+            <p class="job">Front-end / 3D Modeler</p>
+            <div class="main-bottom">
+                <button class="scroll-down-button" onclick="jumpToSkills()">
+                    <img src="/Picture/arrow-down.png" width="100%" alt="">
+                </button>
+            </div>  
+        </div>
+    </header>
+
+
+
+    <section class="skills-section" id="skills">
+        <h1>Skills</h1>
+        <div class="container">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+            <div class="card">4</div>
+        </div>
+    </section>
 </body>
+
 </html>
