@@ -11,6 +11,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     overflow-x: hidden;
@@ -126,15 +129,62 @@ h1{
     font-size: 5rem;
     margin: 1em 0;
 }
-.container{
+.grid-container{
     width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 .card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
     background-color: var(--white);
-    width: 20em;
-    margin: 10px;
+    font-size: 1.25rem;
+}
+
+
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+}
+.footer{
+    margin: 1rem 0;
+}
+.footer-link{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/*** Mobile ***/
+@media only screen and (max-width: 426px){
+    .img-round{
+        max-width: 50%;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+/*** Tablet ***/
+@media only screen and (min-width: 426px) and (max-width: 768px){
+    .img-round{
+        max-width: 30%;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
