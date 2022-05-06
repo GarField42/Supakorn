@@ -20,7 +20,7 @@
                 <button class="nav-button" onclick="jumpToSkills()">
                     <p class="nav-text rotateLeft">Skills</p>
                 </button>
-                <button class="nav-button">
+                <button class="nav-button" onclick="jumpToPortfolio()">
                     <p class="nav-text rotateLeft">Portfolio</p>
                 </button>
             </div>
@@ -40,9 +40,9 @@
             <p class="job">Front-end / 3D Modeler</p>
             <div class="main-bottom">
                 <button class="scroll-down-button" onclick="jumpToSkills()">
-                    <img src="Picture/arrow-down.png" width="100%" alt="">
+                    <img src="Picture/arrow-down.png" width="100%" alt="arrow down">
                 </button>
-            </div>  
+            </div>
         </div>
     </header>
 
@@ -50,31 +50,47 @@
 
     <section class="skills-section" id="skills">
         <h1>Skills</h1>
-        <div class="grid-container">
-            <div class="card">
-                <img src="/Picture/Icon/html.svg" width="42" height="42" alt="HTML icon">
+        <div class="skills-card-container">
+            <div class="skills-card">
+                <img src="Picture/Icon/html.svg" width="42" height="42" alt="HTML icon">
                 <p style="margin-left: 0.75rem;">HTML</p>
             </div>
-            <div class="card">
+            <div class="skills-card">
                 <img src="Picture/Icon/css.svg" width="42" height="42" alt="CSS icon">
                 <p style="margin-left: 0.75rem;">CSS</p>
             </div>
-            <div class="card">
+            <div class="skills-card">
                 <img src="Picture/Icon/javascript.svg" width="42" height="42" alt="JS icon">
                 <p style="margin-left: 0.75rem;">JavaScript</p>
             </div>
-            <div class="card">
+            <div class="skills-card">
                 <img src="Picture/Icon/python.svg" width="42" height="42" alt="Python icon">
                 <p style="margin-left: 0.75rem;">Python</p>
             </div>
-            <div class="card">
-                <img src="" width="42" height="42" alt="C# icon">
+            <div class="skills-card">
+                <img src="Picture/Icon/c_sharp.png" width="42" height="42" alt="C# icon">
                 <p style="margin-left: 0.75rem;">C#</p>
             </div>
-            <div class="card">
+            <div class="skills-card">
                 <img src="" width="42" height="42" alt="Maya icon">
                 <p style="margin-left: 0.75rem;">Maya</p>
             </div>
+            <div class="skills-card">
+                <img src="" width="42" height="42" alt="Zbrush icon">
+                <p style="margin-left: 0.75rem;">Zbrush</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="portfolio-section" id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="portfolio-card-container">
+            <a href="https://howhighweare.netlify.app/" target="_blank" class="portfolio-card" style="background-image:url(Picture/HowHighWeAre.JPG);">
+            </a>
+            <a href="https://krungtainam.netlify.app/" target="_blank" class="portfolio-card" style="background-image:url(Picture/KrungTaiNam.JPG);">
+            </a>
         </div>
     </section>
 

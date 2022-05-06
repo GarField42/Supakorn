@@ -16,6 +16,7 @@ body{
     align-items: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    background-color: var(--bg);
     overflow-x: hidden;
 }
 button:hover{
@@ -123,25 +124,40 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--bg);
 }
 h1{
     font-size: 5rem;
     margin: 1em 0;
 }
-.grid-container{
+.skills-card-container{
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.card{
+.skills-card{
+    border-radius: 5px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
     background-color: var(--white);
     font-size: 1.25rem;
+}
+.portfolio-card-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.portfolio-card{
+    height: 300px;
+    border-radius: 25px;
+    background-size: cover;
+}
+.portfolio-card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 
@@ -154,6 +170,7 @@ footer{
     align-items: center;
     background-color: var(--black);
     color: var(--white);
+    margin-top: 100px;
 }
 .footer{
     margin: 1rem 0;
@@ -172,8 +189,14 @@ footer{
     .img-round{
         max-width: 50%;
     }
-    .grid-container{
+    .skills-card-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio-card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio-card{
+        height: 200px;
     }
 }
 
@@ -184,7 +207,10 @@ footer{
     .img-round{
         max-width: 30%;
     }
-    .grid-container{
+    .skills-card-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-card-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
