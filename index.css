@@ -112,12 +112,11 @@ button:hover{
     border: none;
     background: none;
     width: 5%;
-    animation: scrollDown;
-    animation-iteration-count: infinite 2s;
+    animation: scrollDown 1s ease-in 0s infinite alternate;
 }
 @keyframes scrollDown{
-    0% {transform: translate(-50%,-50%);}
-    100% {transform: translate(-50%,0%);}
+    0% {transform: translate(0%,-50%);}
+    100% {transform: translate(0%,0%);}
 }
 section{
     width: 100%;
@@ -186,6 +185,15 @@ footer{
 
 /*** Mobile ***/
 @media only screen and (max-width: 426px){
+    .nav{
+        display: none;
+    }
+    .name{
+        font-size: 8vw;
+    }
+    .job{
+        font-size: 5vw;
+    }
     .img-round{
         max-width: 50%;
     }
