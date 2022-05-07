@@ -143,6 +143,9 @@ h1{
     background-color: var(--white);
     font-size: 1.25rem;
 }
+.skill-name{
+    margin-left: 0.75rem;
+}
 .portfolio-card-container{
     width: 90%;
     display: grid;
